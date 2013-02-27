@@ -67,4 +67,11 @@ public class SensorOutput {
 		this.additionalTypes = additionalTypes;
 	}
 
+        @Override public String toString() {
+            return "uri: " + uri +
+               "; hasValue: [" + hasValue + "]" +
+               "; additionalProperties: " + additionalProperties +
+               "; additionalTypes: " + additionalTypes;
+        }
+
 }

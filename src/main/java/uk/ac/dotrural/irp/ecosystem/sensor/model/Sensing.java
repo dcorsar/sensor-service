@@ -26,4 +26,8 @@ public class Sensing {
 		this.uri = uri;
 	}
 
+        @Override public String toString() {
+            return "uri: " + uri;
+        }
+
 }

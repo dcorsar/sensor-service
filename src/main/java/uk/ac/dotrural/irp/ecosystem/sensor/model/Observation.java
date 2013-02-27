@@ -117,6 +117,18 @@ public class Observation {
 	public void setAdditionalTypes(List<String> additionalTypes) {
 		this.additionalTypes = additionalTypes;
 	}
-	
+
+        @Override public String toString() {
+            return "uri: " + uri +
+                "; observationResultTime: " + observationResultTime +
+                "; observationSamplingTime: " + observationSamplingTime +
+                "; observationResult: [" + observationResult + "]" +
+                "; featureOfInterest: [" + featureOfInterest + "]" +
+                "; observedBy: [" + observedBy + "]" +
+                "; sensingMethodUsed: [" + sensingMethodUsed + "]" +
+                "; observedProperty: [" + observedProperty + "]" +
+                "; additionalTypes: " + additionalTypes +
+                "; additionalProperties: " + additionalProperties;
+        }
 	
 }

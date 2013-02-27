@@ -48,4 +48,10 @@ public class ObservationValue {
 		this.additionalTypes = additionalTypes;
 	}
 
+        @Override public String toString() {
+            return "uri: " + uri +
+                "; additionalProperties: " + additionalProperties +
+                "; additionalTypes: " + additionalTypes;
+        }
+
 }

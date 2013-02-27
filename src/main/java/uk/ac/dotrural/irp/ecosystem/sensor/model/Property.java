@@ -24,4 +24,8 @@ public class Property {
 		this.uri = uri;
 	}
 
+        @Override public String toString() {
+            return "uri: " + uri;
+        }
+
 }

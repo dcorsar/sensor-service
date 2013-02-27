@@ -27,4 +27,8 @@ public class FeatureOfInterest {
 		this.uri = uri;
 	}
 
+        @Override public String toString() {
+            return "uri: " + uri;
+        }
+
 }

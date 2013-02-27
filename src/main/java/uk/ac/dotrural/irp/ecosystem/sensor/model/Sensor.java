@@ -52,6 +52,11 @@ public class Sensor {
 		this.implementsSensing = implementsSensing;
 	}
 
+        @Override public String toString() {
+           return "uri: " + uri +
+            "; observes: [" + observes + "]" +
+            "; implementsSensing: " + implementsSensing;
+        }
 	
 	
 }
