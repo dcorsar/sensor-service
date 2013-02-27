@@ -2,7 +2,6 @@ package uk.ac.dotrural.irp.ecosystem.sensor.resource.impl;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
@@ -14,13 +13,6 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 
 import org.springframework.context.annotation.Scope;
-
-import com.hp.hpl.jena.datatypes.RDFDatatype;
-import com.hp.hpl.jena.datatypes.xsd.XSDDatatype;
-import com.hp.hpl.jena.query.QuerySolution;
-import com.hp.hpl.jena.query.ResultSet;
-import com.hp.hpl.jena.rdf.model.Literal;
-import com.hp.hpl.jena.rdf.model.RDFNode;
 
 import uk.ac.dotrural.irp.ecosystem.core.models.jaxb.system.EndpointInfo;
 import uk.ac.dotrural.irp.ecosystem.core.models.jaxb.system.Query;
@@ -35,12 +27,14 @@ import uk.ac.dotrural.irp.ecosystem.sensor.model.Observation;
 import uk.ac.dotrural.irp.ecosystem.sensor.model.ObservationPayload;
 import uk.ac.dotrural.irp.ecosystem.sensor.model.ObservationValue;
 import uk.ac.dotrural.irp.ecosystem.sensor.model.Property;
-import uk.ac.dotrural.irp.ecosystem.sensor.model.PropertyType;
 import uk.ac.dotrural.irp.ecosystem.sensor.model.PropertyValue;
 import uk.ac.dotrural.irp.ecosystem.sensor.model.Sensing;
 import uk.ac.dotrural.irp.ecosystem.sensor.model.Sensor;
 import uk.ac.dotrural.irp.ecosystem.sensor.model.SensorOutput;
 import uk.ac.dotrural.irp.ecosystem.sensor.queries.ObservationQueries;
+
+import com.hp.hpl.jena.query.QuerySolution;
+import com.hp.hpl.jena.query.ResultSet;
 
 @Path("/observations")
 @Scope("request")

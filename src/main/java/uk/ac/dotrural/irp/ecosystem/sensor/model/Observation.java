@@ -24,7 +24,7 @@ public class Observation {
 	}
 
 	public Observation(String observationUri) {
-		super();
+		this();
 		setUri(observationUri);
 	}
 
